@@ -13,10 +13,10 @@ RR_FIX_CATEGORY_BUG(UIWindowEYAdditions)
 
 @implementation UIWindow (RRAdditions)
 
-+ (BOOL)isKeyboardVisible {
-    UIWindow* window = [UIApplication sharedApplication].keyWindow;
-    return !![window findFirstResponder];
-}
+//+ (BOOL)isKeyboardVisible {
+//    UIWindow* window = [UIApplication sharedApplication].keyWindow;
+//    return !![window findFirstResponder];
+//}
 
 - (UIView *)findFirstResponder {
     return [self findFirstResponderInView:self];
