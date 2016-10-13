@@ -7,7 +7,7 @@
 //
 
 #import "UIView+RRAdditions.h"
-#import "UIApplication+RRAdditions.h"
+//#import "UIApplication+RRAdditions.h"
 #import "RRPreprocessorMacros.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -173,15 +173,15 @@ RR_FIX_CATEGORY_BUG(UIViewEYAdditions)
     self.frame = frame;
 }
 
-- (CGFloat)orientationWidth {
-    return ([UIApplication sharedApplication].isLandscape)
-    ? self.height : self.width;
-}
-
-- (CGFloat)orientationHeight {
-    return ([UIApplication sharedApplication].isLandscape)
-    ? self.width : self.height;
-}
+//- (CGFloat)orientationWidth {
+//    return ([UIApplication sharedApplication].isLandscape)
+//    ? self.height : self.width;
+//}
+//
+//- (CGFloat)orientationHeight {
+//    return ([UIApplication sharedApplication].isLandscape)
+//    ? self.width : self.height;
+//}
 
 + (instancetype)viewWithFrame:(CGRect)frame backgroundColor:(UIColor *)color
 {
